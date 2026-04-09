@@ -5,7 +5,7 @@ homepage: https://github.com/rocchen/flutter_local_network_ios
 
 
 environment:
-  sdk: '>=2.19.6 <3.0.0'
+  sdk: '>=2.19.6 <4.0.0'
   flutter: ">=2.5.0"
 
 dependencies:
