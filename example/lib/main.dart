@@ -17,6 +17,7 @@ class MyApp extends StatefulWidget {
 
 class _MyAppState extends State<MyApp> {
   String _platformVersion = 'Unknown';
+  String _authorizationResult = 'Unknown';
   final _flutterLocalNetworkIosPlugin = FlutterLocalNetworkIosPlus();
 
   @override
@@ -28,7 +29,6 @@ class _MyAppState extends State<MyApp> {
   // Platform messages are asynchronous, so we initialize in an async method.
   Future<void> initPlatformState() async {
     bool? result = await _flutterLocalNetworkIosPlugin.requestAuthorization();
-    debugPrint("requestAuthorization result: $result");
     String platformVersion;
     // Platform messages may fail, so we use a try/catch PlatformException.
     // We also handle the message potentially returning null.
@@ -47,6 +47,7 @@ class _MyAppState extends State<MyApp> {
 
     setState(() {
       _platformVersion = platformVersion;
+      _authorizationResult = result.toString();
     });
   }
 
@@ -58,7 +59,14 @@ class _MyAppState extends State<MyApp> {
           title: const Text('Plugin example app'),
         ),
         body: Center(
-          child: Text('Running on: $_platformVersion\n'),
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              Text('requestAuthorization: $_authorizationResult'),
+              const SizedBox(height: 8),
+              Text('Running on: $_platformVersion'),
+            ],
+          ),
         ),
       ),
     );

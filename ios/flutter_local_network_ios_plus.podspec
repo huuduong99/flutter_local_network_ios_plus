@@ -4,7 +4,7 @@
 #
 Pod::Spec.new do |s|
   s.name             = 'flutter_local_network_ios_plus'
-  s.version          = '0.0.1'
+  s.version          = '0.0.2'
   s.summary          = 'A Flutter plugin for handling iOS local network permissions.'
   s.description      = <<-DESC
 A Flutter plugin for handling iOS local network permissions.
@@ -13,7 +13,7 @@ A Flutter plugin for handling iOS local network permissions.
   s.license          = { :file => '../LICENSE' }
   s.author           = { 'Your Company' => 'email@example.com' }
   s.source           = { :path => '.' }
-  s.source_files     = 'Classes/**/*'
+  s.source_files     = 'flutter_local_network_ios_plus/Sources/flutter_local_network_ios_plus/**/*'
   s.dependency 'Flutter'
   s.platform         = :ios, '13.0'
   s.swift_version    = '5.0'

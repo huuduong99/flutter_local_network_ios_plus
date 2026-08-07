@@ -95,8 +95,9 @@ pubspec.lock
 **/ios/ServiceDefinitions.json
 **/ios/Runner/GeneratedPluginRegistrant.*
 
-
-
+# Swift Package Manager (local build artifacts)
+**/.build/
+**/.swiftpm/
 
 **.g.dart
 /lib/generated/
