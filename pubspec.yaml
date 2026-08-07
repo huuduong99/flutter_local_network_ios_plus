@@ -6,8 +6,8 @@ repository: https://github.com/huuduong99/flutter_local_network_ios_plus
 issue_tracker: https://github.com/huuduong99/flutter_local_network_ios_plus/issues
 
 environment:
-  sdk: '>=2.19.6 <4.0.0'
-  flutter: ">=2.5.0"
+  sdk: '^3.3.0'
+  flutter: ">=3.16.0"
 
 dependencies:
   flutter:
@@ -17,7 +17,7 @@ dependencies:
 dev_dependencies:
   flutter_test:
     sdk: flutter
-  flutter_lints: ^2.0.0
+  flutter_lints: ^4.0.0
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
