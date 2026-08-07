@@ -1,6 +1,6 @@
 name: flutter_local_network_ios_plus
 description: A Flutter plugin for handling iOS local network permissions.
-version: 0.0.2
+version: 0.0.3
 homepage: https://github.com/huuduong99/flutter_local_network_ios_plus
 repository: https://github.com/huuduong99/flutter_local_network_ios_plus
 issue_tracker: https://github.com/huuduong99/flutter_local_network_ios_plus/issues

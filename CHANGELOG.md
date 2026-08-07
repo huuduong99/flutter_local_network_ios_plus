@@ -1,3 +1,8 @@
+## 0.0.3
+
+* **Breaking:** Raise minimum Dart SDK to `^3.3.0` (requires Flutter `>=3.16.0`).
+* Update `flutter_lints` to `^4.0.0`.
+
 ## 0.0.2
 
 * Add Swift Package Manager (SPM) support for iOS (Flutter 3.24+).
